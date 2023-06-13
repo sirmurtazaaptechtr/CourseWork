@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<studentInformation>
+   <student stdId="101">
+      <name>Hiba Farhan</name>
+      <dob>06-07-2006</dob>
+      <email>hibakhan1857@gmail.com</email>
+   </student>
+   <student stdId="102">
+      <name>Junaid Kamran</name>
+      <dob>29-12-2005</dob>
+      <email>jk0674775@gmail.com</email>
+      <gender>male</gender>
+      <phone>0321-8775343</phone>
+   </student>   
+</studentInformation>

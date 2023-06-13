@@ -1,0 +1,38 @@
+* {
+    font-family: cursive;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: wheat;
+}
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+nav div img {
+    height: 60px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 65vw;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+}
+@media only screen and (max-width:991px) {
+    nav {
+        flex-direction: column;
+    }    
+}
+@media only screen and (max-width:767px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }    
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myHead"></h1>
+
+    <p id="p1"></p>
+
+
+    
+    <script>
+        // window.alert("Ye JavaScript hai...");
+        // window.confirm("Kya aap aagay jana cahate hai?");
+        // window.prompt("Aap ka naam kya hai?");
+
+        // window.console.log("this is JavaScript");
+        // window.console.warn("aagay khatra hai");
+        // window.console.error("garbar ho gye");
+
+        window.document.write("Welcome to JavaScript");
+        window.document.getElementById('myHead').innerText = "Ye JavaScript Hai...";
+        window.document.getElementById('myHead').style.color = 'green';
+        
+        num1 = 10;
+        var num2 = 20;
+        let num3 = 30;
+        const num4 = 40;
+
+        window.document.getElementById('p1').innerText = "The value is "+num1;
+        window.document.getElementById('p1').innerHTML += `<br>The value is ${num2}`;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+git --version
+
+_____________for global configurations__________________
+
+1. git config --global user.name "John Doe"
+2. git config --global user.email example.email.com
+3. git config --global core.editor "code --wait"
+4. git config --golbal core.autocrlf true
+
+_____________for Tracking files__________________
+
+1. git init (to initilize empty git repo).
+2. git status (to view branch status or tracking and commit).
+3. git add <file Name> (to add perticular file form working directory to staging area i.e. index).
+   git add -A (to add all files and folders form working directory to staging area i.e. index).
+4. git restore --cached <file Name> (to remove file form staging area i.e. index).
+5. git commit (to commit all files to repo from index with long message).
+   git commit -m "_____any short message______" (to commit all files to repo from index with short message).
+6. git ls-files (to view staging area).
+7. git log (to view all commits in detail)
+   git log --oneline
+_____________for Branch__________________
+
+1. git branch (to view all branches)
+   git branch --list
+2. git branch <new branch name> (to create new branch)
+3. git branch -d <branch name> (to delete that branch)
+4. git checkout <branch name> (to goto that branch)
+5. git merge <branch name> (to bring data from the repo of that branch to the branch where you are typing the command).
