@@ -21,7 +21,9 @@
                     }
                 </style>
                 <!-- JQuery CDN -->
-                <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>                 -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+                <!-- Datatable JS -->
+                <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
             </head>
             <body>
                 <div class="container mt-3">
@@ -55,18 +57,15 @@
                     </table>
                 </div>                
                 <!-- Bootstrap Bundle -->
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-                <!-- Datatable JS -->
-                <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>                
                 <!-- Main JS -->
                 <script>
-                    let table = new DataTable
-                    ('#myTable');
-                    table.DataTable();
+                    // let table = new DataTable('#myTable');
+                    // table.DataTable();
 
-                    // $(document).ready( function () {
-                    //     $('#myTable').DataTable();
-                    // } );
+                    $(document).ready( function () {
+                        $('#myTable').DataTable();
+                    } );
                 </script>
             </body>
         </html>
