@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <script>
+        const p1 = document.getElementById('p1');
+        const myData = `{
+    "food": [
+        {
+            "name": "Belgian Waffle",
+            "price": "$5.95",
+            "description": "Two of our famous Belgian Waffles with plenty of real maple syrup",
+            "calories": 650
+        },
+        {
+            "name": "Strawberry Belgian Waffles",
+            "price": "$7.95",
+            "description": "Light Belgian waffles covered with strawberries and whipped cream",
+            "calories": 900
+        },
+        {
+            "name": "Berry-Berry Belgian Waffles",
+            "price": "$8.95",
+            "description": "Belgian waffles covered with assorted fresh berries and whipped cream",
+            "calories": 900
+        },
+        {
+            "name": "French Toast",
+            "price": "$4.50",
+            "description": "Thick slices made from our homemade sourdough bread",
+            "calories": 600
+        },
+        {
+            "name": "Homestyle Breakfast",
+            "price": "$6.95",
+            "description": "Two eggs, bacon or sausage, toast, and our ever-popular hash browns",
+            "calories": 950
+        }
+    ]
+}`;
+
+        // alert(myData);
+        console.log(myData);
+        // document.write(myData);
+        // p1.innerText = myData;        
+        let breakfast_menu = JSON.parse(myData);        
+        console.log(breakfast_menu);
+        console.log(breakfast_menu.food);
+        // console.log(breakfast_menu.food[0]);
+        // console.log(breakfast_menu.food[0].name);
+        // console.log(breakfast_menu.food[0].price);
+        // console.log(breakfast_menu.food[0].description);
+        // console.log(breakfast_menu.food[0].calories);
+        breakfast_menu.food.forEach(function(menu){
+            console.log("Name : " + menu.name);                        
+            console.log("Price : " + menu.price);                        
+            console.log("Description : " + menu.description);                        
+            console.log("Calories : " + menu.calories);                        
+        });
+    </script>
+</body>
+</html>

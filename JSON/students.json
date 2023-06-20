@@ -1,0 +1,52 @@
+{
+    "students": [
+       {
+          "name": "Saad",
+          "age": 17,
+          "friends": [
+             "Moiz",
+             "Rayyan"
+          ]
+       },
+       {
+          "name": "Moiz",
+          "age": 20,
+          "friends": [
+             "Saad",
+             "Rayyan"
+          ]
+       },
+       {
+          "name": "Hiba",
+          "age": 17,
+          "friends": [
+             "Mujtaba",
+             "Junaid"
+          ]
+       },
+       {
+          "name": "Rayyan",
+          "age": 18,
+          "friends": [
+             "Saad",
+             "Moiz"
+          ]
+       },
+       {
+          "name": "Mujtaba",
+          "age": 21,
+          "friends": [
+             "Hiba",
+             "Junaid"
+          ]
+       },
+       {
+          "name": "Junaid",
+          "age": 18,
+          "friends": [
+             "Hiba",
+             "Mujtiba"
+          ]
+       }
+    ]
+ }
