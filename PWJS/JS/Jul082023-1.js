@@ -93,5 +93,3 @@ let obj = [{name:"Ali",age:28},{name:"Sara",age:17}];
 console.log(obj);
 console.log(obj[1].name);
 console.log(obj[1].age);
-
-
