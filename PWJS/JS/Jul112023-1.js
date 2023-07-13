@@ -69,7 +69,7 @@ showMsgBtn.addEventListener("click",function(){
     greet(theName);
 });
 
-num.addEventListener("blur  ",function(){
+num.addEventListener("blur",function(){
     let theNum = num.value;
     showSqr.innerHTML = `${sqrer(theNum)}`;
 });
