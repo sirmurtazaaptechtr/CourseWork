@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="obtMarks">Enter Marks out of 100 : </label>
+            <input type="text" name="obtMarks" id="obtMarks">
+            <input type="button" value="Check Result" name="resBtn" id="resBtn">
+        </div><br><br>
+        <div>
+            <label for="alpha">Enter any Alphabet (A-z or a-z) : </label>
+            <input type="text" name="alpha" id="alpha">
+            <input type="button" value="Check Alphabet Type" id="alphaBtn" name="alphaBtn">
+        </div>
+        <div id="resBox"></div>
+    </form>
+    <script>
+        const obtMarks = document.getElementById('obtMarks');
+        const resBtn = document.getElementById('resBtn');
+        const resBox = document.getElementById('resBox');
+        const alpha = document.getElementById('alpha');
+        const alphaBtn = document.getElementById('alphaBtn');
+
+        resBtn.addEventListener("click", function () {
+            let marks = obtMarks.value;
+            let per = (marks / 100) * 100;
+
+            if (per >= 40) {
+                resBox.innerHTML = `<p>You have passed the exam with ${per}% marks.</p>`;
+            } else {
+                resBox.innerHTML = `<p>You have failed the exam because your percentage is ${per}%. </p>`;
+            }
+        });
+
+        alphaBtn.addEventListener("click", function () {
+            let alphabet = alpha.value;
+            if (alphabet >= 'A' && alphabet <= 'Z' || alphabet >= 'a' && alphabet <= 'z') {
+                // if (alphabet == 'a' || alphabet == 'e' || alphabet == 'i' || alphabet == 'o' || alphabet == 'u' || alphabet == 'A' || alphabet == 'E' || alphabet == 'I' || alphabet == 'O' || alphabet == 'U') {
+                //     resBox.innerHTML = `<p>${alphabet} is vowel.</p>`;
+                // } else {
+                //     resBox.innerHTML = `<p>${alphabet} is Consonent.</p>`;
+                // }
+                switch(alphabet){
+                    case 'a':                        
+                    case 'A':
+                    case 'e':
+                    case 'E':
+                    case 'i':
+                    case 'I':
+                    case 'o':
+                    case 'O':
+                    case 'u':
+                    case 'U':
+                        resBox.innerHTML = `<p>${alphabet} is vowel.</p>`;
+                    break;
+                    case 'z':
+                    case 'Z':
+                        resBox.innerHTML = `<p>${alphabet} is the last Alphabet and it is also Consonent</p>`;
+                    break;
+                    default:
+                        resBox.innerHTML = `<p>${alphabet} is Consonent.</p>`;
+                    break;
+                }
+            }else{
+                resBox.innerHTML = `<p>Invalid Input!</p>`;
+            }
+        });
+    </script>
+</body>
+
+</html>
