@@ -36,5 +36,4 @@ function deleteNote(index){
         localStorage.setItem("students", JSON.stringify(students));
         displayStudents();
     }
-
 }
